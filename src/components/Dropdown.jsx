@@ -7,7 +7,7 @@ function classNames(...classes) {
 
 export default function MyDropdown(props) {
   return (
-    <Menu as="div" className="relative inline-block text-left">
+    <Menu as="div" className="relative z-30 inline-block text-left">
       <div>
         <Menu.Button className="inline-flex w-full justify-center rounded-md">
           {props.variant === "instagram" ? (

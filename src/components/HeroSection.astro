@@ -2,7 +2,7 @@
 import Container from "./Container.astro";
 ---
 
-<div class="relative">
+<div class="relative overflow-y-hidden">
   <div
     aria-hidden="true"
     class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20"
@@ -17,9 +17,9 @@ import Container from "./Container.astro";
     </div>
   </div>
   <Container>
-    <div class="relative pt-16 lg:pt-36 ml-auto">
+    <div class="relative mb-28 pt-16 lg:pt-36 ml-auto">
       <div class="justify-between items-center flex">
-        <div class="lg:w-2/3 mx-0 md:mx-8">
+        <div class="w-full mx-0 md:mx-8">
           <img
             class="mx-auto lg:hidden"
             src="https://cdn.discordapp.com/attachments/974700248582746142/1026763904589770772/yessa.png"
@@ -30,7 +30,7 @@ import Container from "./Container.astro";
             Kami Paslon OSIS <br class="hidden lg:block" />
             <span class="text-primary dark:text-white"> No 5</span>
           </h1>
-          <p class="mt-4 text-gray-800 text-xl dark:text-gray-300 max-w-2xl">
+          <p class="mt-4 text-gray-800 text-xl dark:text-gray-300 max-w-xl">
             Kami disebut sebagai Paslon Kopi Susu, meskipun banyak perbedaan
             tapi kami tetap bisa saling menyatukan pikiran dan bekerjasama.
             Jangan lupa vote kami yaaa
