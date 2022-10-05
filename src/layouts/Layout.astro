@@ -1,5 +1,4 @@
 ---
-import AppFooter from "../components/AppFooter.astro";
 import AppHeader from "../components/AppHeader.astro";
 ---
 
@@ -23,7 +22,7 @@ import AppHeader from "../components/AppHeader.astro";
   </head>
   <body class="bg-white dark:bg-gray-900">
     <AppHeader />
-    <main id="swup" class="wrapper">
+    <main>
       <slot />
     </main>
     <style>
@@ -35,13 +34,8 @@ import AppHeader from "../components/AppHeader.astro";
         margin: 0;
       }
 
-      .transition-fade {
-        transition: 0.4s;
-        opacity: 1;
-      }
-
-      html.is-animating .transition-fade {
-        opacity: 0;
+      * {
+        scroll-behavior: smooth;
       }
     </style>
   </body>
